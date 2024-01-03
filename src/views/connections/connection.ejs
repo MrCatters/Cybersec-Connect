@@ -1,0 +1,45 @@
+<%- include('../partials/top_header') %>
+<link rel="stylesheet" href="/css/connection.css"/>
+<%- include('../partials/bottom_header') %> 
+    <main>
+      <div class="connection-information">
+        <h1><%= name %> </h1>
+        <img src="<%= image %>"/>
+        <div id="description-buttons-wrapper">
+          <div class="description">
+            <h2><%= host %> </h2>
+            <p><%= date %> </p>
+            <p> <%= start_time %>  - <%= end_time %></p>
+            <p><%= location %></p>
+          </div>
+          <div id="user-buttons">
+            <% if (attending.length != 1) { %>
+              <p class="fs-4"><%= attending.length %> members RSVP'd</p>
+            <% } else {%>
+              <p class="fs-4"><%= attending.length %> member RSVP'd</p>
+            <% } %> 
+            <% if (user === host_id.toString()) { %>
+              <div id="connection-buttons">
+                <button class="btn me-md-2 btn-primary" id="edit-button">Edit</button>
+                <button class="btn me-md-2 btn-primary" id="delete-button">Delete</button>
+              </div>
+              <% } else { %>
+                <div id="edit-buttons">
+                  <p class="fs-4">RSVP to attend!</p>
+                  <button class="btn me-md-2" id="yes-button" type="button">Yes</button>
+                  <button class="btn me-md-2" id="no-button" type="button">No</button>
+                  <button class="btn me-md-2" id="maybe-button" type="button">Maybe</button>
+                </div>
+              <% } %>
+          </div>
+        </div>
+        <div class="details">
+          <h1>Details</h1>
+          <p><%= details %></p>
+        </div>
+      </div>
+    </main>
+    <%- include('../partials/footer') %>
+    <script src="../../js/connection.js"></script>
+  </body>
+</html>

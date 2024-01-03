@@ -1,0 +1,17 @@
+#create-connection {
+    position: relative;
+    bottom: 0;
+    float: right;
+}
+
+form {
+    max-width: 1000px;
+}
+
+#details {
+    margin: 0;
+}
+
+main {
+    margin-bottom: 50px;
+}

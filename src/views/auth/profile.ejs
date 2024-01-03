@@ -1,0 +1,54 @@
+<%- include('../partials/top_header') %>
+<%- include('../partials/bottom_header') %> 
+<main>
+    <div class = "row">
+        <p class="fs-3">Test's Connections</p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Connection</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% userConnections.forEach(connection => { %>
+                    <tr>
+                        <td><%= connection.name %> </td>
+                        <td><%= connection.topic %> </td>
+                        <td>
+                            <span id="button-col" connection-id="<%= connection.id %>">
+                                <button type="button" class="btn btn-primary" id="edit-button">Edit</button>
+                                <button type="button" class="btn btn-primary" id="delete-button">Delete</button>
+                            </span>
+                        </td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+
+        <p class="fs-3">Test's RSVPs</p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Connection</th>
+                    <th>Category</th>
+                    <th>Going?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for( let i = 0; i < rsvps.length; i++ ) { %>
+                    <tr>
+                        <td><%= rsvpConnections[i].name %> </td>
+                        <td><%= rsvpConnections[i].topic %> </td>
+                        <td><%= rsvps[i].going %> </td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+</main>
+<%- include('../partials/footer') %>
+<script src="../../js/profile.js"></script>
+</body>
+</html>

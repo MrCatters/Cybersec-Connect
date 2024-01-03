@@ -1,0 +1,14 @@
+<%- include('./partials/top_header') %>
+<link rel="stylesheet" href="/css/error.css" />
+<%- include('./partials/bottom_header') %>
+    <main>
+        <span>
+            <h2>Error: <%= err.status %></h2>
+            <p><%= err.message %></p>
+            <a href="/">Go Home</a>
+        </span>
+    </main>
+    <%- include('./partials/footer') %>
+    </body>
+</html>
+

@@ -1,0 +1,130 @@
+/**
+* Copy and paste first two lines and then the rest of the document
+*/
+
+use NBAD
+db.createCollection("nbads")
+
+db.nbads.insertMany([{
+    "name": "SecureNet: Fortifying Your Digital Armor",
+    "topic": "Workshops",
+    "details": "\"SecureNet: Fortifying Your Digital Armor\" is an empowering and insightful cybersecurity event aimed at enhancing individuals and organizations' defense mechanisms in the digital landscape. This event dives deep into the ever-evolving world of cyber threats, offering participants practical strategies to bolster their online security.",
+    "date": new Date("2023-10-29T21:25:06.039"),
+    "start_time": new Date("2023-11-15T09:15:00.00"),
+    "end_time": new Date("2023-11-15T10:15:00.000"),
+    "location": "Woodward Hall Room 234",
+    "host": ObjectId("5a68fde3f09ad7646ddec17e"),
+    "image": "https://blog.naiop.org/wp-content/uploads/2017/02/Cybersecurity-2.jpg"
+},
+{
+    "name": "CyberGuard Workshop: Building Resilient Defenses",
+    "topic": "Workshops",
+    "details": "Explore effective cybersecurity strategies tailored to small businesses in this workshop, covering key concepts and practical approaches to enhance defenses against cyber threats.",
+    "date": new Date("2023-10-29T21:25:06.039"),
+    "start_time": new Date("2023-11-15T09:15:00.00"),
+    "end_time": new Date("2023-11-15T10:15:00.000"),
+    "location": "Smith Auditorium Room 101",
+    "host": ObjectId("5a68fde3f09ad7646ddec17e"),
+    "image": "https://www.novatia.com/hs-fs/hubfs/Blog_Page/cyber-security%20(original).jpg?width=600&name=cyber-security%20(original).jpg"
+},
+{
+    "name": "CodeSafe: Protecting Your Digital Footprint",
+    "topic": "Workshops",
+    "details": "In this workshop, participants will explore strategies for enhancing online privacy and security. The session will cover techniques to protect personal information, promote secure online behavior, and defend against cyber threats, ultimately ensuring a safer digital presence.",
+    "date": new Date("2023-10-29T21:25:06.039"),
+    "start_time": new Date("2023-11-15T09:15:00.00"),
+    "end_time": new Date("2023-11-15T10:15:00.000"),
+    "location": "Johnson Conference Room Room 320",
+    "host": ObjectId("5a68fde3f09ad7646ddec17e"),
+    "image": "https://s33644.pcdn.co/wp-content/uploads/2018/01/cybersecurity-global-locks-1-e1514978992920.jpeg"
+},
+{
+    "name": "IoT Fortification: Safeguarding the Internet of Things",
+    "topic": "Keynotes",
+    "details": "Delve into IoT security best practices in this workshop, focusing on safeguarding Internet of Things (IoT) devices and networks. Learn essential strategies and measures to protect your IoT ecosystem against vulnerabilities and cyber threats.",
+    "date": new Date("2023-10-29T21:25:06.039"),
+    "start_time": new Date("2023-11-15T09:15:00.00"),
+    "end_time": new Date("2023-11-15T10:15:00.000"),
+    "location": "Davis Library Study Area Room 205",
+    "host": ObjectId("5a68fde3f09ad7646ddec17e"),
+    "image": "https://www.pcerror-fix.com/wp-content/uploads/2021/03/cyver-security-768x447.jpeg"
+},
+{
+    "name": "Securing the Cloud: Strategies for Data Protection and Privacy",
+    "topic": "Keynotes",
+    "details": "This workshop explores effective strategies for securing cloud environments while prioritizing data protection and privacy. Participants will learn key concepts and techniques to ensure the safety and confidentiality of data stored and processed in the cloud.",
+    "date": new Date("2023-10-29T21:25:06.039"),
+    "start_time": new Date("2023-11-15T09:15:00.00"),
+    "end_time": new Date("2023-11-15T10:15:00.000"),
+    "location": "Roberts Laboratory Room 112",
+    "host": ObjectId("5a68fde3f09ad7646ddec17e"),
+    "image": "https://www.udacity.com/blog/wp-content/uploads/2020/07/Cybersecurity-Specialist_Blog-scaled.jpeg"
+},
+{
+    "name": "AI Sentinels: How Artificial Intelligence is Revolutionizing Cyber",
+    "topic": "Keynotes",
+    "details": "Discover the transformative role of artificial intelligence (AI) in the field of cybersecurity in this workshop. Explore how AI technologies are revolutionizing cyber defenses and threat detection, enhancing security in the digital age.",
+    "date": new Date("2023-10-29T21:25:06.039"),
+    "start_time": new Date("2023-11-15T09:15:00.00"),
+    "end_time": new Date("2023-11-15T10:15:00.000"),
+    "location": "Brown Lounge Room 304",
+    "host": ObjectId("5a68fde3f09ad7646ddec17e"),
+    "image": "https://www.networkmedics.com/blog/wp-content/uploads/2019/07/Cybersecurity-image-2-825x510.jpg"
+},
+{
+    "name": "SecureBytes: Cybersecurity Enthusiasts Meetup",
+    "topic": "Meetups",
+    "details": "Join the SecureBytes meetup to connect with fellow cybersecurity enthusiasts. This gathering provides an opportunity to discuss current trends, share insights, and collaborate on various aspects of cybersecurity in an informal and welcoming setting.",
+    "date": new Date("2023-10-29T21:25:06.039"),
+    "start_time": new Date("2023-11-15T09:15:00.00"),
+    "end_time": new Date("2023-11-15T10:15:00.000"),
+    "location": "Miller Cafeteria Room 220",
+    "host": ObjectId("5a68fde3f09ad7646ddec17f"),
+    "image": "https://futureskillsprime.in/sites/default/files/inline-images/iStock-1174366497.jpg"
+},
+{
+    "name": "IoT SecureSync: Internet of Things Security Forum",
+    "topic": "Meetups",
+    "details": "Participate in the IoT SecureSync forum, where experts and enthusiasts convene to discuss Internet of Things (IoT) security. Explore the latest trends, challenges, and solutions in securing IoT devices and networks, fostering a safer and more resilient IoT ecosystem.",
+    "date": new Date("2023-10-29T21:25:06.039"),
+    "start_time": new Date("2023-11-15T09:15:00.00"),
+    "end_time": new Date("2023-11-15T10:15:00.000"),
+    "location": "Taylor Courtyard Room 101A",
+    "host": ObjectId("5a68fde3f09ad7646ddec17f"),
+    "image": "https://www.cm-alliance.com/hubfs/60776739_l%20%281%29.jpg"
+},
+{
+    "name": "Privacy Pioneers: Safeguarding Personal Data ",
+    "topic": "Meetups",
+    "details": "Join the Privacy Pioneers event to explore strategies and initiatives aimed at safeguarding personal data and enhancing privacy in the digital age. Learn from experts and pioneers in the field about best practices and emerging technologies for preserving individuals' privacy rights.",
+    "date": new Date("2023-10-29T21:25:06.039"),
+    "start_time": new Date("2023-11-15T09:15:00.00"),
+    "end_time": new Date("2023-11-15T10:15:00.000"),
+    "location": "Parker Gymnasium Room 401",
+    "host": ObjectId("5a68fde3f09ad7646ddec17f"),
+    "image": "https://g.foolcdn.com/image/?url=https%3A//g.foolcdn.com/editorial/images/610632/digital-cybersecurity-concept.jpg&w=2000&op=resize"
+}])
+
+db.users.insertMany([
+    {
+        "_id": ObjectId("5a68fde3f09ad7646ddec17e"),
+        "firstName": "Billy",
+        "lastName": "Bob",
+        "email": "billy@bob.com",
+        "password": "$2b$12$hMCGib9sCs8aH/V6/lG.Ueh59CFy6C8WJuuNUjQkwMfYNzEuBwN2O",
+    },
+    {
+        "_id": ObjectId("5a68fde3f09ad7646ddec17f"),
+        "firstName": "Joey",
+        "lastName": "Alice",
+        "email": "joey@alice.com",
+        "password": "$2b$12$hMCGib9sCs8aH/V6/lG.Ueh59CFy6C8WJuuNUjQkwMfYNzEuBwN2O",
+    },
+    {
+        "_id": ObjectId("5a68fde3f09ad7646ddec17a"),
+        "firstName": "test",
+        "lastName": "test",
+        "email": "a@a.com",
+        "password": "$2b$12$hMCGib9sCs8aH/V6/lG.Ueh59CFy6C8WJuuNUjQkwMfYNzEuBwN2O",
+    }
+])

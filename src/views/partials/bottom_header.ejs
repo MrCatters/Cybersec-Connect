@@ -1,0 +1,58 @@
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <!-- 100% until xxl screens -->
+      <a class="navbar-brand" href="/index">
+        <img alt="Charlotte Cybersecurity Conference"
+          src="/images/logo.png" />
+      </a>
+      <div class="collapse navbar-collapse" id="topRightNav">
+        <ul class="navbar-nav nav navbar-expand-md me-auto mb-2 mb-lg-0" id="user-links">
+          <% if (user) { %>
+            <li class="nav-item">
+              <a href="/connections/newConnection" class="nav-link active">Start a New Connection</a>
+            </li>
+            <li class="nav-item">
+              <a href="/auth/profile" class="nav-link active">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a href="/auth/signout" class="nav-link active">Sign Out</a>
+            </li>
+          <% } else {%>
+            <li class="nav-item">
+              <a href="/auth/login" class="nav-link active">Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="/auth/signup" class="nav-link active">Sign Up</a>
+            </li>
+          <% } %> 
+            </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-light" id="bottom-nav">
+      <ul class="navbar-nav nav navbar-expand-md me-auto mb-2 mb-lg-0" id="bottom-nav-ul">
+        <li class="nav-item">
+          <a href="/connections" class="nav-link active">Connections</a>
+        </li>
+        <% try { %>
+          <% if (userName) { %>
+            <li class="nav-item" id="user-welcome">
+              <p>Welcome <%= userName %>!</p>
+            </li>
+          <% } %>
+        <% } catch (error){%>
+        <% } %>  
+      </ul>
+    </nav>
+    <% if (errorMessages.length > 0) { %>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <p><%= errorMessages %></p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <% } %>
+    <% if (successMessages.length > 0) { %>
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <p><%= successMessages %></p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <% } %>

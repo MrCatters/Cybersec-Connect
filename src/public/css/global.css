@@ -1,0 +1,104 @@
+
+main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+main {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.navbar, .navbar-nav .nav-link.active, .footer {
+    background-color: #535353 !important;
+    color: azure !important;
+    font-size: large;
+}
+
+#bottom-nav-ul {
+    padding-right: 2%;
+    padding-left: 2%;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#user-welcome > p:nth-child(1){
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+#user-welcome {
+    display: grid;
+    order: 0;
+    color:lightgreen;
+}
+
+#topRightNav {
+    right: 10rem;
+    position: absolute;
+}
+
+#user-links {
+    width: fit-content;
+}
+
+#user-links > *{
+    margin-left: 10%;
+    white-space: nowrap;
+}
+
+.right-links img {
+    width: 50px;
+}
+
+.navbar-brand > img {
+    width: 250px;
+    margin-left: 5%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.left-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+}
+
+.right-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.left-links > a > p, .left-links > p {
+    margin-bottom: 0;
+    color: azure;
+}
+
+.left-links > a {
+    text-decoration: none;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px !important;
+}

@@ -1,0 +1,12 @@
+main > * {
+    width: 80%;
+    max-width: 1000px;
+}
+
+main > span{
+    flex-direction: column;
+}
+
+main > p {
+    font-size: large;
+}

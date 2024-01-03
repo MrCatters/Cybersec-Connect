@@ -1,0 +1,24 @@
+  <%- include('../partials/top_header') %>
+  <link rel="stylesheet" href="/css/connections.css"/>
+  <%- include('../partials/bottom_header') %> 
+  <main>
+    <ul>
+      <% topics.forEach(topic => { %>
+        <li><%= topic.toUpperCase() %></li>
+        <li>
+          <ul>
+        <% connections.forEach(connection => { %>
+          <% if (connection.topic === topic) { %>
+            <li>
+              <a href="/connections/connection/<%= connection.id %>"><%= connection.name %> </a>
+            </li>
+          <% }; %> 
+        <% }); %> 
+          </ul>
+        </li>
+      <% }); %> 
+    </ul>
+  </main>
+    <%- include('../partials/footer') %>
+  </body>
+</html>

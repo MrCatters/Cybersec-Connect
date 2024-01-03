@@ -1,0 +1,29 @@
+<%- include('../partials/top_header') %>
+<link rel="stylesheet" href="/css/connections.css"/>
+<%- include('../partials/bottom_header') %> 
+<main>
+  <form class="row g-1" method="post" action="/auth/signup">
+    <div class="form-group col-md-6">
+      <label for="firstName" class="form-label">First Name:</label>
+      <input type="text" class="form-control" name="firstName" id="firstName" aria-describedby="firstNameHelp" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="lastName" class="form-label">Last Name:</label>
+      <input type="text" class="form-control" name="lastName" aria-describedby="lastNameHelp" required>
+    </div>
+    <span class="m-3"></span>
+    <div class="form-group col-md-6">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" name="password" id="exampleInputPassword1" maxlength="64" minlength="8" required>
+    </div>
+    <span class="m-3"></span>
+    <button type="submit" class="btn btn-primary">Submit</button>      
+  </form>
+</main>
+  <%- include('../partials/footer') %>
+</body>
+</html>
